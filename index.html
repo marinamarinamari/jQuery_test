@@ -71,7 +71,7 @@
        ]};
 
        $(document).on("click",".js-fortune-start",function(){
-           $(".result").toggle();
+           $(".result").fadeIn(200);
 
         test();
         toggleStartClass(this,"もう一度占う！");
@@ -80,7 +80,7 @@
 
        $(document).on("click",".toggleStartClass",function(){
         toggleStartClass(this,"運勢を占う！");
-        $("div").toggleClass(".result");
+        $(".result").fadeOut(200);
        });
 
        function toggleStartClass(element,text){
